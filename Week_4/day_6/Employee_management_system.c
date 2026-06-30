@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+    int id;
+    char name[50];
+    float salary;
+
+    printf("Enter Employee ID: ");
+    scanf("%d", &id);
+
+    getchar();
+
+    printf("Enter Employee Name: ");
+    gets(name);
+
+    printf("Enter Salary: ");
+    scanf("%f", &salary);
+
+    printf("\nEmployee Details\n");
+    printf("ID     : %d\n", id);
+    printf("Name   : %s\n", name);
+    printf("Salary : %.2f\n", salary);
+
+    return 0;
+}
